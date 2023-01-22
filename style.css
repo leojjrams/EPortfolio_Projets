@@ -1,0 +1,190 @@
+:root {
+    --blue: #033967;
+}
+
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(231,231,231,1) 100%);
+    background-size: 100%;
+    background-attachment: fixed;
+    margin: 0;
+    min-height: 100%;
+    width: 100%;
+}
+
+p,h1,h2,span{
+    font-family : helvetica, sans-serif;
+}
+
+#presentation p{
+    font-size : 1.1vw;
+}
+
+#presentation h1{
+    font-size : 1.6vw;
+}
+
+header{
+    height : 5vw;
+    background-color : white;
+}
+
+.logos:hover{
+    opacity : 80%;
+}
+
+#logo{
+    width : 20vw;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.logos{
+    width : 3.5vw;
+    display : inline;
+    position : absolute;
+    top : 0.75vw;
+}
+
+#github{
+    right : 7%;
+}
+
+#linkedin{
+    right : 2%;
+}
+
+#profil{
+    float : left;
+    font-size : 2vw;
+    font-weight : bold;
+    font-family : 'Arial Black',sans-serif;
+    margin-left : 2%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color : var(--blue);
+}
+
+#presentation{
+    background-color : white;
+    width : 73%;
+    text-align : center;
+    margin : 0 auto;
+    margin-top : 5vw;
+    border-radius : 20px;
+    box-shadow: 0px 0px 25px 8px rgba(0,0,0,0.3);
+    padding : 1vw;
+}
+
+#video{
+    width : 100%;
+}
+
+.imgProjets{
+    display : table-cell;
+    vertical-align : middle;
+}
+
+.imgProjets img{
+    height : 20vw;
+    border-radius: 3vw;
+}
+
+.description{
+    height : 100%;
+    display : table-cell;
+    vertical-align : middle;
+}
+
+.telecharger{
+    width : 4vw;
+    margin : 0 auto;
+}
+
+.telecharger:hover{
+    opacity : 60%;
+}
+
+.projet{
+    margin : 5% auto;
+    width : 50%;
+    display : table;
+    text-align : center;
+}
+
+.projet p{
+    text-align : left;
+}
+
+.texte{
+    text-align : center;
+    margin : 0 auto;
+    display : block;
+    padding : 0 5%;
+    font-size : 1vw;
+}
+
+hr{
+    width : 80%;
+    color : black;
+}
+
+@media screen and (max-width: 1080px) {
+    .imgProjets img{
+        height : 40vw;
+    }
+
+    .projet{
+        width : 70%;
+    }
+
+    .texte{
+        font-size : 2vw;
+    }
+
+    #presentation{
+        width : 90%;
+    }
+
+    #presentation p{
+        font-size : 2.2vw;
+    }
+
+    #presentation h1{
+        font-size : 3.6vw;
+    }
+
+    #profil{
+        font-size : 4vw;
+    }
+
+    #logo{
+        width : 40vw;
+    }
+
+    header{
+        height : 10vw;
+    }
+
+    .logos{
+        width : 7vw;
+        top : 1.5vw;
+    }
+
+    #github{
+        right : 12%;
+    }
+    
+    #linkedin{
+        right : 2%;
+    }
+}
